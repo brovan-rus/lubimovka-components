@@ -1,0 +1,92 @@
+.button {
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 15px 16px;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 240px;
+  outline: 0;
+  text-transform: uppercase;
+  transition: all .4s linear;
+}
+
+.button_accent {
+  background-color: #B7C09D;
+}
+
+.button:hover {
+  color: #ECEBE8;
+  background-color: #242424;
+}
+
+.button_border_full {
+  border: 1px solid #000;
+}
+
+.button_border_top {
+  border: 0;
+  border-top: 1px solid #000;
+}
+
+.button_font {
+  font-family: Formular, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #242424;
+}
+
+.arrow_down{
+  display: flex;
+}
+
+.arrow_down::after {
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-position: center;
+  background-image: url('images/arrow-down.svg');
+  transition: all .4s linear;
+}
+
+.arrow_down:hover::after {
+  filter: invert(100%);
+}
+
+.arrow_right{
+  display: flex;
+}
+
+.arrow_right::after {
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-position: center;
+  background-image: url('images/arrow-right.svg');
+  transition: all .4s linear;
+}
+
+.arrow_right:hover::after {
+  filter: invert(100%);
+}
+
+.arrow_diagonal{
+  display: flex;
+}
+
+.arrow_diagonal::after {
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-position: center;
+  background-image: url('images/arrow-diagonal.svg');
+  transition: all .4s linear;
+}
+
+.arrow_diagonal:hover::after {
+  filter: invert(100%);
+}
